@@ -4,5 +4,5 @@ def pr_name(a):
     print(f'Hello, {a}')
     return a
 for i in names:
-    pr_name(names[n])
-    n += 1
+    pr_name(i)
+

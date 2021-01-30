@@ -5,4 +5,4 @@ def even_keys(**kwargs):
     return kwargs
 
 
-even_keys(firstnam = 'Masha', Group = 1, physic = 4, history = 10)
+even_keys(firstnam='Masha', Group=1, physic=4, history=10)

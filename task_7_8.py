@@ -1,30 +1,40 @@
 def average(*args):
-    global aver
     n = 0
+    sum_aver = 0
     for i in args:
-        i += args[n]
-        n += 1
-        aver = i/len(args)
+        sum_aver += i
+        continue
+    aver = sum_aver / len(args)
     print(aver)
+    return args
 
 
 def geometric_mean(*args):
-    global g_m
-    n = 0
-    a = len(args)
-    b = '0.'
-    c = b + str(a)
-    d = float(c)
+    l = 1
     for i in args:
-        i *= args[n]
-        n += 1
-        g_m = i ** c
+        l *= i
+        continue
+    g_m = l ** (1 /8)
     print(g_m)
+    return args
 
-def task(*args, mean_type):
-    if mean_type.lower() == 'Average':
-        average(args)
-    elif mean_type.lower() == 'Geometric mean':
-        geometric_mean(args)
-    else:
-        print('Wrong option ')
+
+def task(*args, **kwargs):
+    for key, values in kwargs.items():
+        for n in values:
+            print(n)
+            if n == 'G':
+                geometric_mean(args)
+            elif n == 'A':
+                average(args)
+            else:
+                print('Wrong option ')
+                continue
+    return args, kwargs
+
+
+average(1, 10, 6, 18, 45)
+
+geometric_mean(1, 10, 6, 18, 45)
+
+task(1, 10, 6, 18, 45, mean_type='G')

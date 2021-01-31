@@ -1,6 +1,6 @@
 def full_func(*args, **kwargs):
     print(args)
-    print(kwargs)
+    print(kwargs.items())
 
     return args, kwargs
 

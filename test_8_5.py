@@ -1,6 +1,6 @@
-cars = [{'model':'audi', 'year' : 1990, 's_num':'A1'},
-    {'model':'bmw', 'year':2001, 's_num':'B48'},
-    {'model':'mercedes', 'year':1989, 's_num':'M33'}]
+cars = [{'year' : 1990, 's_num':1},
+    {'year':2001, 's_num':48},
+    {'year':1989, 's_num':33}]
 
 n = 1990
 

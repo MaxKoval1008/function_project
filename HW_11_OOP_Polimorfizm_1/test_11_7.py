@@ -4,7 +4,6 @@ class Dog:
     def get_master(self):
         return self.__master  #работает с приватным параметром
 
-dog = Dog('Master')
+dog = Dog('Jack')
 
-dog.get_master()
-print(dog._Dog__master)
+print(dog.get_master())

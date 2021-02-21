@@ -1,6 +1,8 @@
 class A:
     def do_something(self):  #определение основного метода
         print('AA')
+
+
 class B(A):
     def do_something(self):  #переопределение метода - полиморфизм (перегрузка оператора)
         print('BB')

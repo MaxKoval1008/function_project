@@ -49,6 +49,6 @@ class Book:
             print('Not Wrongs')
 
 
-a = Book('sda', 2002, 'name', 100)
+a = Book(-10, 2002, 'name', 100)
 
 

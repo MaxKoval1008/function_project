@@ -1,9 +1,9 @@
-my_file = open('test.txt')
+my_file = open('../HW_9_Decorator/test.txt')
 line = my_file.readline()
 print(line)
 my_file.close()
 
-my_file = open('test.txt')
+my_file = open('../HW_9_Decorator/test.txt')
 n = 0
 while True:
     if n < 4:
@@ -16,7 +16,7 @@ while True:
         break
 my_file.close()
 
-my_file = open('test.txt')
+my_file = open('../HW_9_Decorator/test.txt')
 m = 1
 while True:
     if m < 6:
@@ -27,7 +27,7 @@ while True:
         break
 my_file.close()
 
-my_file = open('test.txt')
+my_file = open('../HW_9_Decorator/test.txt')
 k = 1
 while True:
     if k < 3:
@@ -38,7 +38,7 @@ while True:
         break
 my_file.close()
 
-my_file = open('test.txt')
+my_file = open('../HW_9_Decorator/test.txt')
 while True:
     line = my_file.readline()
     if not line:

@@ -1,4 +1,4 @@
-with open('test_1.txt', 'a') as my_file:
+with open('../HW_9_Decorator/test_1.txt', 'a') as my_file:
     n = 0
     while True:
         text = input('Enter smth ')

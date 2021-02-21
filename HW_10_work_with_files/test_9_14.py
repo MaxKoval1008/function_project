@@ -1,7 +1,7 @@
-with open('test_2.txt') as my_file:
+with open('../HW_9_Decorator/test_2.txt') as my_file:
     text_old = my_file.readlines()
 
-with open('test_3.txt', 'w') as new_file:
+with open('../HW_9_Decorator/test_3.txt', 'w') as new_file:
     for i in text_old:
         for j in i:
             if j == '0':
